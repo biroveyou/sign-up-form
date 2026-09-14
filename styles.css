@@ -1,3 +1,13 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.main-image img {
+    height: 100vh;
+    display: block;
+}
