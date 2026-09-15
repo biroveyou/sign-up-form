@@ -1,3 +1,7 @@
+:root {
+    --black: #000000; 
+}
+
 * {
     box-sizing: border-box;
 }
@@ -5,9 +9,34 @@
 body {
     height: 100%;
     margin: 0;
+
+    display: flex;
 }
 
 .main-image img {
     height: 100vh;
     display: block;
+}
+
+.form-structure {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 120px;
+    height: 120px;
+
+    border-radius: 120px;
+    background-color: var(--black);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 90px;
 }
