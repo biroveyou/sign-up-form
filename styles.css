@@ -51,10 +51,31 @@ body {
     color: var(--white);
 }
 
+.main-image {
+    position: relative;
+}
+
 .main-image img {
     height: 100vh;
     width: auto;
     display: block;
+}
+
+.main-image p {
+    position: absolute;
+    margin: 0;
+    display: inline;
+    bottom: 10px;
+    left: 10%;
+    right: 10%;
+
+    color:white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.main-image a {
+    color: inherit;
 }
 
 .form-structure {
@@ -131,4 +152,3 @@ form {
 .form-row p {
     margin: 20px 0;
 }
-
