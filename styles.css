@@ -6,6 +6,8 @@
     --radius: 4px;
     --page-width: 560px;
     --page-gap: 20px;
+    --light-red: rgb(219, 33, 33);
+    --light-blue: rgb(67, 111, 255);
 }
 
 @font-face {
@@ -195,4 +197,14 @@ button[type="submit"] {
 .submit-btn a {
     color: inherit;
     font-weight: bold;
+}
+
+#password:user-invalid,
+#confirm-password:user-invalid {
+    border-bottom: var(--border) solid var(--light-red);
+}
+
+input:focus {
+    border-bottom: var(--border) solid var(--light-blue);
+    box-shadow: 0 2px 2px -2px black;
 }
