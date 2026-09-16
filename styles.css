@@ -1,8 +1,11 @@
 :root {
-    --black: #333333;
+    --black: #2b2b2b;
     --white: #FFFFFF;
+    --grey: #e2e2e2;
     --border: 1px;
     --radius: 4px;
+    --page-width: 560px;
+    --page-gap: 20px;
 }
 
 @font-face {
@@ -85,6 +88,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
+    gap: var(--page-gap);
 }
 
 .logo {
@@ -94,7 +98,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 80px;
 }
 
 .logo img {
@@ -108,8 +111,19 @@ body {
     font-weight: bold;
     font-size: 4rem;
 }
+
 .sign-up-form {
-    width: 540px;
+    width: var(--page-width);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text {
+    width: var(--page-width);
+    color: var(--grey);
+    font-size: 14px;
 }
 
 form {
@@ -135,7 +149,7 @@ form {
 }
 
 .form-row input {
-    min-width: 280px;
+    min-width: 260px;
     height: 40px;
     padding: 0 4px 8px 0;
 
@@ -155,9 +169,9 @@ form {
 }
 
 .submit-btn {
-    margin-top: 80px;
     display: flex;
     flex-direction: column;
+    margin-top: var(--page-gap);
 }
 
 button[type="submit"] {
@@ -165,7 +179,7 @@ button[type="submit"] {
     cursor: pointer;
     flex-shrink: 1;
 
-    width: 540px;
+    width: var(--page-width);
     padding: 16px 0;
 
     background-color: var(--white);
