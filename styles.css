@@ -67,8 +67,8 @@ body {
 }
 
 .logo {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
 
     display: flex;
     justify-content: center;
@@ -77,7 +77,7 @@ body {
 }
 
 .logo img {
-    height: 90px;
+    height: 80px;
 }
 
 .logo p {
@@ -96,7 +96,7 @@ body {
 
 .form-row label {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     word-spacing: 1px;
     letter-spacing: 2px;
@@ -106,8 +106,9 @@ body {
 }
 
 .form-row input {
-    min-width: 100px;
-    height: 28px;
+    min-width: 200px;
+    height: 40px;
+    padding: 8px;
 
     font-size: 14px;
     font-family: inherit;
@@ -117,11 +118,12 @@ body {
     background-color: var(--black);
     border: var(--border) solid var(--white);
     border-radius: var(--radius);
-    box-shadow: 1px 4px 2px black;
+    box-shadow: 1px 2px 2px black;
 
 }
 
 .name {
     display: flex;
     gap: 12px;
+    justify-content: center;
 }
