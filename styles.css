@@ -90,8 +90,15 @@ body {
     width: 480px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
 .form-row {
     display: flex;
+    gap: 12px;
+    justify-content: center;
 }
 
 .form-row label {
@@ -119,11 +126,9 @@ body {
     border: var(--border) solid var(--white);
     border-radius: var(--radius);
     box-shadow: 1px 2px 2px black;
-
 }
 
-.name {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
+.form-row p {
+    margin: 20px 0;
 }
+
