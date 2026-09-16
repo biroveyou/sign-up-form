@@ -94,7 +94,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 40px;
+    margin-bottom: 80px;
 }
 
 .logo img {
@@ -102,6 +102,7 @@ body {
 }
 
 .logo p {
+    margin: 0;
     color: var(--white);
     font-family: 'norse';
     font-weight: bold;
@@ -134,7 +135,7 @@ form {
 }
 
 .form-row input {
-    min-width: 200px;
+    min-width: 280px;
     height: 40px;
     padding: 0 4px 8px 0;
 
@@ -151,4 +152,31 @@ form {
 
 .form-row p {
     margin: 20px 0;
+}
+
+.submit-btn {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+button[type="submit"] {
+    all: unset;
+    cursor: pointer;
+    flex-shrink: 1;
+
+    width: 540px;
+    padding: 16px 0;
+
+    background-color: var(--white);
+    border-radius: var(--radius);
+    
+    font-weight: bold;
+    color: var(--black);
+    text-align: center;
+}
+
+.submit-btn a {
+    color: inherit;
+    font-weight: bold;
 }
