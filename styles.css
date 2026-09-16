@@ -1,5 +1,5 @@
 :root {
-    --black: #222222;
+    --black: #333333;
     --white: #FFFFFF;
     --border: 1px;
     --radius: 4px;
@@ -87,7 +87,7 @@ body {
     font-size: 4rem;
 }
 .sign-up-form {
-    width: 480px;
+    width: 540px;
 }
 
 form {
@@ -97,7 +97,7 @@ form {
 
 .form-row {
     display: flex;
-    gap: 12px;
+    gap: 32px;
     justify-content: center;
 }
 
@@ -109,23 +109,23 @@ form {
     letter-spacing: 2px;
 
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .form-row input {
     min-width: 200px;
     height: 40px;
-    padding: 8px;
+    padding: 0 4px 8px 0;
 
-    font-size: 14px;
+    font-size: 16px;
     font-family: inherit;
     
     appearance: none;
+    border: none;
+    outline: none;
     color: var(--white);
     background-color: var(--black);
-    border: var(--border) solid var(--white);
-    border-radius: var(--radius);
-    box-shadow: 1px 2px 2px black;
+    border-bottom: var(--border) solid var(--white);
 }
 
 .form-row p {
